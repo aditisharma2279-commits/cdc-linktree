@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC | Career Development Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/120" alt="CDC Logo" class="logo">
+
+        <h1>Career Development Center</h1>
+        <p class="tagline">
+            Shaheed Bhagat Singh Evening College <br>
+            University of Delhi
+        </p>
+
+        <a href="#" class="link">🌐 Official Website</a>
+        <a href="#" class="link">📸 Instagram</a>
+        <a href="#" class="link">💼 LinkedIn</a>
+        <a href="#" class="link">📩 Contact Us</a>
+        <a href="#" class="link">📅 Upcoming Events</a>
+
+        <footer>
+            <p>© 2026 CDC | Udyami Society</p>
+        </footer>
+    </div>
+
+</body>
+</html>
