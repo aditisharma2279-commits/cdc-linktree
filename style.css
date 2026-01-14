@@ -1,123 +1,128 @@
-/* =========================
-   RESET
-========================= */
+/* ================= RESET ================= */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* =========================
-   PAGE BACKGROUND
-========================= */
+/* ================= BACKGROUND ================= */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   min-height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  /* Royal blue background image */
   background: url("./bg-royal-blue.png") no-repeat center center fixed;
   background-size: cover;
 }
 
-/* =========================
-   MAIN CARD
-========================= */
+/* ================= MAIN CONTAINER ================= */
 .box {
-  background: rgba(255, 255, 255, 0.96);
   width: 92%;
   max-width: 420px;
-  padding: 28px 20px;
-  border-radius: 22px;
+  padding: 24px 18px;
   text-align: center;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
 }
 
-/* =========================
-   TOP LOGOS
-========================= */
+/* ================= LOGOS ================= */
 .top-logos {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 12px;
+  gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .top-logos img {
-  width: 52px;
-  height: auto;
+  width: 46px;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.5));
 }
 
-/* =========================
-   TEXT
-========================= */
+/* ================= TEXT ================= */
 h1 {
+  color: #ffffff;
   font-size: 22px;
   margin-bottom: 6px;
 }
 
 h2 {
+  color: #ffffff;
   font-size: 18px;
-  margin: 20px 0 10px;
+  margin: 26px 0 14px;
 }
 
 .sub {
+  color: #cfd9ff;
   font-size: 14px;
-  color: #555;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+/* ================= GLASS BUTTONS ================= */
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 
-  text-decoration: none;
-  padding: 14px;
-  margin: 12px 0;
-  border-radius: 14px;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 18px;
 
-  font-weight: bold;
+  text-decoration: none;
   font-size: 15px;
+  font-weight: 600;
   color: #ffffff;
 
-  background: linear-gradient(135deg, #0a4fa3, #062c5c);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  /* Glass effect */
+  background: rgba(20, 25, 45, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Glow */
+  box-shadow:
+    0 0 12px rgba(120, 170, 255, 0.45),
+    0 0 28px rgba(120, 170, 255, 0.25);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow:
+    0 0 18px rgba(160, 200, 255, 0.7),
+    0 0 40px rgba(160, 200, 255, 0.45);
 }
 
-/* ICONS INSIDE BUTTONS */
+/* ================= ICONS ================= */
 .btn i {
   font-size: 18px;
 }
 
-/* =========================
-   WHATSAPP BUTTON
-========================= */
+/* ================= WHATSAPP SPECIAL ================= */
 .whatsapp {
-  background: linear-gradient(135deg, #25D366, #1ebe5d);
+  background: rgba(20, 60, 40, 0.6);
+  box-shadow:
+    0 0 14px rgba(37, 211, 102, 0.7),
+    0 0 32px rgba(37, 211, 102, 0.45);
 }
 
-/* =========================
-   DIVIDER
-========================= */
+.whatsapp:hover {
+  box-shadow:
+    0 0 22px rgba(37, 211, 102, 0.95),
+    0 0 48px rgba(37, 211, 102, 0.7);
+}
+
+/* ================= DIVIDER ================= */
 hr {
   border: none;
   height: 1px;
-  background: #ddd;
-  margin: 26px 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  margin: 32px 0;
 }
