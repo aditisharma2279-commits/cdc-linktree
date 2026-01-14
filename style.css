@@ -1,35 +1,40 @@
 /* RESET */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* PAGE BACKGROUND */
+/* BODY WITH IMAGE BACKGROUND */
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #000428, #004e92);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* Royal blue graphic background */
+  background-image: url("bg-royal-blue.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* MAIN BOX */
+/* MAIN CARD */
 .box {
-  background: #ffffff;
-  width: 90%;
+  background: rgba(255, 255, 255, 0.95);
+  width: 92%;
   max-width: 420px;
   padding: 28px 20px;
-  border-radius: 18px;
+  border-radius: 22px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
 }
 
 /* TOP LOGOS */
 .top-logos {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 16px;
@@ -42,13 +47,13 @@ body {
 
 /* TEXT */
 h1 {
-  margin: 8px 0 6px;
   font-size: 22px;
+  margin-bottom: 6px;
 }
 
 h2 {
-  margin: 18px 0 10px;
   font-size: 18px;
+  margin: 20px 0 10px;
 }
 
 .sub {
@@ -61,27 +66,25 @@ h2 {
 .btn {
   display: block;
   text-decoration: none;
-  background: #004e92;
-  color: #ffffff;
   padding: 14px;
   margin: 12px 0;
-  border-radius: 12px;
+  border-radius: 14px;
   font-weight: bold;
-  transition: transform 0.2s ease, background 0.2s ease;
+  font-size: 15px;
+  color: #fff;
+  background: linear-gradient(135deg, #0a4fa3, #062c5c);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
-  background: #000428;
   transform: scale(1.03);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
 }
 
 /* WHATSAPP BUTTON */
 .whatsapp {
-  background: #25D366;
-}
-
-.whatsapp:hover {
-  background: #1ebe5d;
+  background: linear-gradient(135deg, #25D366, #1ebe5d);
 }
 
 /* DIVIDER */
